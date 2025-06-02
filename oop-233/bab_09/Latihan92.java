@@ -1,30 +1,28 @@
 package bab_09;
 
-// Class Lingkaran dengan implementasi encapsulation
 class Lingkaran {
     // Konstanta PI yang bersifat read-only (final)
     private static final double PI = Math.PI;
     
     // Atribut private untuk radius
-    private double r;
+    private double r = 0;
     
     // Getter untuk radius
     public double getR() {
         return r;
     }
     
-    // Getter untuk PI (read-only)
+    // Getter untuk PI
     public static double getPI() {
         return PI;
     }
     
-    // Setter untuk radius dengan validasi
+    // Setter untuk radius
     public void setR(double r) {
         if (r >= 0) {
             this.r = r;
         } else {
             System.out.println("Radius tidak boleh negatif!");
-            this.r = 0;
         }
     }
     
@@ -46,16 +44,15 @@ class Lingkaran {
     // Method untuk menampilkan informasi lingkaran
     public void tampilkanInfo() {
         System.out.println("=== Informasi Lingkaran ===");
-        System.out.println("Nilai PI: " + PI);
-        System.out.println("Radius: " + r);
-        System.out.println("Diameter: " + hitungDiameter());
-        System.out.println("Keliling: " + String.format("%.2f", hitungKeliling()));
-        System.out.println("Luas: " + String.format("%.2f", hitungLuas()));
+        System.out.println("Nilai PI    : " + PI);
+        System.out.println("Radius      : " + r);
+        System.out.println("Diameter    : " + hitungDiameter());
+        System.out.println("Keliling    : " + String.format("%.2f", hitungKeliling()));
+        System.out.println("Luas        : " + String.format("%.2f", hitungLuas()));
         System.out.println("============================");
     }
 }
 
-// Class utama
 public class Latihan92 {
     public static void main(String[] args) {
         // Membuat objek lingkaran menggunakan constructor default
