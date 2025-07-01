@@ -1,6 +1,6 @@
-import id.kumara.sedana.BankSampah;
-import id.kumara.sedana.Nasabah;
-import id.kumara.sedana.Setoran;
+import com.stikom.BankSampah;
+import com.stikom.Nasabah;
+import com.stikom.Setoran;
 
 public class Main {
     public static void main(String[] args) {
